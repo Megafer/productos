@@ -253,8 +253,9 @@ p {
  }
 
 .centrin h2 {
-	color: white;
-}	
+	text-shadow: 2px 2px 4px #0000006e;
+}
+	
 
 #informacion {
     padding: 20px 0;
