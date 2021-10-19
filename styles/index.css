@@ -250,8 +250,11 @@ p {
 .centrin {
     padding: 25px 30px;
     text-align: center;
-    color: white;
-}
+ }
+
+.centrin h2 {
+	color: white;
+}	
 
 #informacion {
     padding: 20px 0;
