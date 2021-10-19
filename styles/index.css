@@ -249,6 +249,7 @@ p {
 
 .centrin {
     padding: 25px 30px;
+	text-align: center;
 }
 
 #informacion {
@@ -288,7 +289,7 @@ h2 span {
 	font-size: 85%;
 }
 .column {
-	margin: 12px 38px 0;
+	margin: 12px 57px 0;
 	padding: 0;
 }
 .column:last-child {
@@ -512,6 +513,11 @@ figure:hover+span {
     display:inline ;
     text-align: center;
 } */
+	
+.column {
+	margin: 12px 38px 0;
+	padding: 0;
+}
 
 .column div {
 	position: relative;
