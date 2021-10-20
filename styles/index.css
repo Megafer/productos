@@ -250,6 +250,8 @@ p {
 .centrin {
     padding: 25px 30px;
     text-align: center;
+    color: black;
+    background-color: white;
  }
 
 .centrin h2 {
@@ -264,12 +266,14 @@ p {
 }
 
 
-.txto {
+/* .txto {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
+} */
+
+
 
 .fotos img {
     width: 85%;
@@ -278,8 +282,49 @@ p {
     border-radius: 1px 22px;
     margin: 10px;
     box-shadow: #000000 2px 2px 9px 1px;
-
 }
+
+.fotos p {
+  
+    width: 80%;
+    height: auto;
+  
+}
+
+/* Nueva Prueba de Imagen, texto y hover */
+
+.img-texto {
+    position: relative;
+    float: left;
+}
+.img-texto span {
+ position: absolute;
+ bottom: 24px;
+ left: 42px;
+ right: 0;
+ z-index: 999;
+ border-radius: 12px;
+ background: #cdcdcd4a;
+ padding: 10px;
+ color: rgb(0, 0, 0);
+ font-family: 'Roboto';
+ width: 80%;
+ font-size:19px;
+ text-shadow: 2px 2px 3px #ffffff;
+ /* display: none;
+ transition: .5s ease-in-out; */
+ transition: .3s ease-in-out;
+ opacity: 0;
+}
+
+.img-texto:hover span {
+/*     display: block;
+    z-index: 0; */
+    opacity: 1;
+}
+
+
+/* Salio muy bien hasta aca */
 
 
 
@@ -513,11 +558,14 @@ figure:hover+span {
     width: 25%;
 }
 
-/* .ttt {
-    position: relative;
-    display:inline ;
-    text-align: center;
-} */
+.img-texto {
+    display: inline;
+    float: none;
+}
+
+.img-texto span {
+    left: 29px;
+}
 	
 .column {
 	margin: 12px 38px 0;
@@ -526,7 +574,7 @@ figure:hover+span {
 
 .column div {
 	position: relative;
-	float: right;
+	float: left;
 /* 	width: 300px;
 	height: 200px; */
 	/* margin: 0 0 42px 25px; */
