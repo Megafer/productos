@@ -142,10 +142,11 @@ p {
 .principal {
     margin-top: 10px;
     background-image: url(../img/3.jpg);
-    background-size: cover;
+    background-size: 200%;
     background-position:center;
     text-align: center;
     color: white;
+	animation: movimiento 10s infinite linear alternate;
 }
 
 .principal .opacidad {
@@ -471,6 +472,18 @@ figure:hover+span {
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
     transform: rotate(-45deg);
   }
+@keyframes movimiento {
+    0%{
+        background-position: bottom left;
+    }
+    50% {
+        background-position: center;
+    }
+    100%{
+        background-position:top right;
+    }
+}
+
 
 
 /* PARA TABLET */
