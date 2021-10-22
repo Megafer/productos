@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<header>
+<header id="nav">
 <div class="arriba">
 <div class="logo">
 </div>
@@ -205,11 +205,27 @@
       e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
       $("body,html").animate({ // aplicamos la función animate a los tags body y html
         scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
-      },700); //el valor 700 indica que lo ara en 700 mili segundos
+      },20); //el valor 700 indica que lo ara en 700 mili segundos
       return false; //rompe el bucle
     });
     </script>
 
+    
+ <!-- Esto es para que la barra de arriba se oculte cuando hago scroll - facil, solo byId el nombre de la barra -->
+<!-- Poner poner transition: top 0.5s en el header por ej, para que lo anime y queda genial -->
+<script>
+    let ubicacionPrincipal  = window.pageYOffset;
+window.onscroll = function() {
+    let Desplazamiento_Actual = window.pageYOffset;
+    if(ubicacionPrincipal >= Desplazamiento_Actual){
+        document.getElementById('nav').style.top = '0';
+    }
+    else{
+        document.getElementById('nav').style.top = '-120px';
+    }
+    ubicacionPrincipal = Desplazamiento_Actual;
+}
+</script>
 
 </body>
 </html>
